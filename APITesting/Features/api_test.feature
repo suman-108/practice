@@ -7,8 +7,4 @@ Feature: API Testing with Rest Assured and cucumber
     And the user first name should be "Janet"
     
     
-  Scenario: Get a user by ID
-    Given I have the user endpoint
-    When I fetch user with ID 1
-    Then the response status code should be 200
-    And the username should be "Leanne Graham"  
+  

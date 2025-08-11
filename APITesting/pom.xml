@@ -70,6 +70,13 @@
         <version>1.9.13</version>
         <scope>test</scope>
     </dependency>
+    
+     <!-- JSON handling -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.16.1</version>
+    </dependency>
 
     <!-- JUnit for running Cucumber tests -->
     <dependency>
@@ -86,6 +93,13 @@
 			<artifactId>cucumber-reporting</artifactId>
 			<version>5.7.5</version>
 		</dependency>
+		
+		<!-- ExtentReports -->
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>5.1.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.vimalselvam</groupId>
@@ -96,12 +110,10 @@
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
 
 		<dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest-core</artifactId>
-			<version>2.2</version>
-			<scope>test</scope>
+		    <groupId>org.hamcrest</groupId>
+		    <artifactId>hamcrest</artifactId> <!-- not hamcrest-core -->
+		    <version>2.2</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
 
 		<dependency>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+
+		<!-- title of the document -->
+		<documentTitle>CSM Automation Report </documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<reportName>
+    <![CDATA[
+                        <img src='https://www.csm.tech/public/img/website/csm-logo.png'/>
+        ]]>
+		</reportName>
+
+
+
+		<!-- location of charts in the test view -->
+		<!-- top, bottom -->
+		<testViewChartLocation>bottom</testViewChartLocation>
+
+		<!-- custom javascript -->
+		<scripts>
+        <![CDATA[
+            $(document).ready(function() {
+           
+             $(".logo-content").hide();
+     
+                 
+
+            });
+        ]]>
+
+		</scripts>
+
+		<!-- custom styles -->
+		<styles>
+        <![CDATA[
+            .report-name { padding-left: 20px; } .report-name > img { float: 
+      left;height: 100%;margin-left: 30px;margin-top:1px;width: 16%;background-color:#FFFFFF; } span.badge.badge-primary {background-color: #08111c;}
+     .badge.badge-primary img {max-width: 50%;}
+        ]]>
+		</styles>
+	</configuration>
+</extentreports>
